@@ -2,6 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const questions = [
+    {
+
+      questionText: 'What is the capital of Texas?',
+      answerOptions: [
+        {answerText: 'Dallas', isCorrect: false}
+        {answerText: 'Austin', isCorrect: true}
+        {answerText: 'Houston', isCorrect: false}
+        {answerText: 'San Antonio', isCorrect: false}
+      ]
+
+    }
+  ]
   return (
     <div className="App">
       <header className="App-header">
