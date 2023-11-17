@@ -7,16 +7,30 @@ function App() {
 
       questionText: 'What is the capital of Texas?',
       answerOptions: [
-        {answerText: 'Dallas', isCorrect: false}
-        {answerText: 'Austin', isCorrect: true}
-        {answerText: 'Houston', isCorrect: false}
+        {answerText: 'Dallas', isCorrect: false},
+        {answerText: 'Austin', isCorrect: true},
+        {answerText: 'Houston', isCorrect: false},
         {answerText: 'San Antonio', isCorrect: false}
-      ]
+      ],
 
     }
   ]
   return (
     <div className="App">
+
+      {false ? (
+        <div className='score-section'>You scored 1 out of {questions.length}</div>
+      ) : (
+            <>
+            <div className='question-section'>
+              <div className='question-count'></div>
+            </div>
+
+            </>
+
+      )
+
+      }
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
