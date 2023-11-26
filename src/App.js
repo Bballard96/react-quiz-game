@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  
   const questions = [
     {
 
@@ -47,7 +48,8 @@ function App() {
   ]
   return (
     <div className="App">
-
+      {/* HINT: replace the "false" with logic to replace the score when user has answered all questions */}
+         {/* <div className='question-text'>{questions[0]}</div> */}
       {false ? (
         <div className='score-section'>You scored 1 out of {questions.length}</div>
       ) : (
@@ -65,6 +67,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
