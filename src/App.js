@@ -57,7 +57,14 @@ function App() {
             <div className='question-section'>
               <div className='question-count'></div>
               <span>Question 1</span>/{questions.length}
-              <div className='question-text'> {questions[0].questionText}</div>
+              <div className='question-text'> {questions[0].questionText}
+              </div>
+              <div className='answer-section'>
+                <button>Answer 1</button>
+                <button>Answer 2</button>
+                <button>Answer 3</button>
+                <button>Answer 4</button>
+              </div>
             </div>
 
             </>
