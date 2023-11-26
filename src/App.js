@@ -34,6 +34,16 @@ function App() {
 
   ]
 },
+    {
+    questionText: 'In the book "The Outsiders" by Stephen King, what is the name of the first man accused of the crime commited?',
+    answerOptions: [ 
+      {answerText: 'The President', isCorrect: true},
+      {answerText: 'Mendez', isCorrect: false},
+      {answerText: 'Leon', isCorrect: false},
+      {answerText: 'The Terminator', isCorrect: false},
+
+  ]
+},
   ]
   return (
     <div className="App">
