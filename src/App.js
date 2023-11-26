@@ -13,7 +13,27 @@ function App() {
         {answerText: 'San Antonio', isCorrect: false}
       ],
 
-    }
+    },
+    {
+    questionText: 'Who is the main character of the first Terminator movie?',
+    answerOptions: [ 
+      {answerText: 'Terminator', isCorrect: false},
+      {answerText: 'John Connor', isCorrect: false},
+      {answerText: 'Sarah Connor', isCorrect: true},
+      {answerText: 'Kyle Reese', isCorrect: false},
+
+  ]
+},
+    {
+    questionText: 'Who is the main character of the first Terminator movie?',
+    answerOptions: [ 
+      {answerText: 'Terminator', isCorrect: false},
+      {answerText: 'John Connor', isCorrect: false},
+      {answerText: 'Sarah Connor', isCorrect: true},
+      {answerText: 'Kyle Reese', isCorrect: false},
+
+  ]
+},
   ]
   return (
     <div className="App">
@@ -22,6 +42,7 @@ function App() {
         <div className='score-section'>You scored 1 out of {questions.length}</div>
       ) : (
             <>
+
             <div className='question-section'>
               <div className='question-count'></div>
             </div>
