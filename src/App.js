@@ -25,12 +25,12 @@ function App() {
   ]
 },
     {
-    questionText: 'Who is the main character of the first Terminator movie?',
+    questionText: 'In Resident Evil 4 Ashley Graham is the daughter of who?',
     answerOptions: [ 
-      {answerText: 'Terminator', isCorrect: false},
-      {answerText: 'John Connor', isCorrect: false},
-      {answerText: 'Sarah Connor', isCorrect: true},
-      {answerText: 'Kyle Reese', isCorrect: false},
+      {answerText: 'The President', isCorrect: true},
+      {answerText: 'Mendez', isCorrect: false},
+      {answerText: 'Leon', isCorrect: false},
+      {answerText: 'The Terminator', isCorrect: false},
 
   ]
 },
