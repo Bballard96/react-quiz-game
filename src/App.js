@@ -46,7 +46,7 @@ function App() {
   ]
 },
 
-/// comment just to get commit since fuck github
+
   ]
   return (
     <div className="App">
