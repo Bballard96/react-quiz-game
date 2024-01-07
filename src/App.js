@@ -8,7 +8,7 @@ function App() {
 
       questionText: 'What is the capital of Texas?',
       answerOptions: [
-        {answerText: 'Dallas ', isCorrect: false},
+        {answerText: 'Dallas', isCorrect: false},
         {answerText: 'Austin', isCorrect: true},
         {answerText: 'Houston', isCorrect: false},
         {answerText: 'San Antonio', isCorrect: false}
@@ -62,11 +62,11 @@ function App() {
               <span>Question 1</span>/{questions.length}
               <div className='question-text'> {questions[0].questionText}
               </div>
-              <div className='answer-section'>
-	{questions[0].answerOptions.map((answerOption, index) => (
-		<button>{answerOption.answerText}</button>
-	))}
-</div>
+            <div className='answer-section'>
+              {questions[0].answerOptions.map((answerOption, index) => (
+                <button>{answerOption.answerText}</button>
+              ))}
+            </div>
             </div>
 
             </>
