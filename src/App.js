@@ -1,7 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
+  
+  const [currentQuestion, setCurrentQuestion] = useState(0)
   
   const questions = [
     {
@@ -60,10 +63,10 @@ function App() {
             <div className='question-section'>
               <div className='question-count'></div>
               <span>Question 1</span>/{questions.length}
-              <div className='question-text'> {questions[0].questionText}
+              <div className='question-text'> {questions[currentQuestion].questionText}
               </div>
             <div className='answer-section'>
-              {questions[0].answerOptions.map((answerOption, index) => (
+              {questions[currentQuestion].answerOptions.map((answerOption, index) => (
                 <button>{answerOption.answerText}</button>
               ))}
             </div>
