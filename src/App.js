@@ -73,7 +73,7 @@ function App() {
               </div>
             <div className='answer-section'>
               {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button>{answerOption.answerText}</button>
+                <button onClick={() => handleAnswerButtonClick()} >{answerOption.answerText}</button>
               ))}
             </div>
             </div>
