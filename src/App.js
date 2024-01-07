@@ -8,7 +8,7 @@ function App() {
 
       questionText: 'What is the capital of Texas?',
       answerOptions: [
-        {answerText: 'Dallas', isCorrect: false},
+        {answerText: 'Dallas ', isCorrect: false},
         {answerText: 'Austin', isCorrect: true},
         {answerText: 'Houston', isCorrect: false},
         {answerText: 'San Antonio', isCorrect: false}
@@ -46,7 +46,7 @@ function App() {
   ]
 },
 
-/// comment just to get commit since fuck github
+
   ]
   return (
     <div className="App">
@@ -63,11 +63,10 @@ function App() {
               <div className='question-text'> {questions[0].questionText}
               </div>
               <div className='answer-section'>
-                <button>Answer 1</button>
-                <button>Answer 2</button>
-                <button>Answer 3</button>
-                <button>Answer 4</button>
-              </div>
+	{questions[0].answerOptions.map((answerOption, index) => (
+		<button>{answerOption.answerText}</button>
+	))}
+</div>
             </div>
 
             </>
