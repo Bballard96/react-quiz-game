@@ -7,7 +7,7 @@ function App() {
   
   const [currentQuestion, setCurrentQuestion] = useState(0)
   
-  const thandleAnswerButtonClick = (answerOption) => {
+  const handleAnswerButtonClick = (answerOption) => {
     const nextQuestion = currentQuestion + 1
     setCurrentQuestion(nextQuestion)
   }
