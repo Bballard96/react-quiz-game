@@ -7,6 +7,11 @@ function App() {
   
   const [currentQuestion, setCurrentQuestion] = useState(0)
   
+  const thandleAnswerButtonClick = (answerOption) => {
+    const nextQuestion = currentQuestion + 1
+    setCurrentQuestion(nextQuestion)
+  }
+
   const questions = [
     {
 
