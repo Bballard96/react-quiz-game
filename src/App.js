@@ -53,10 +53,10 @@ function App() {
     {
     questionText: 'In the book "The Outsiders" by Stephen King, what is the name of the first man accused of the crime commited?',
     answerOptions: [ 
-      {answerText: 'The President', isCorrect: true},
-      {answerText: 'Mendez', isCorrect: false},
-      {answerText: 'Leon', isCorrect: false},
-      {answerText: 'The Terminator', isCorrect: false},
+      {answerText: 'Terry Maitland', isCorrect: true},
+      {answerText: 'Aubrey Graham', isCorrect: false},
+      {answerText: 'Alec Pelley', isCorrect: false},
+      {answerText: 'Ralph Anderson', isCorrect: false},
 
   ]
 },
