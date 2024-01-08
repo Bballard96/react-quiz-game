@@ -9,7 +9,10 @@ function App() {
 
   const [showScore, setShowScore] = useState(false)
   
-  const handleAnswerButtonClick = (answerOption) => {
+  const handleAnswerButtonClick = (isCorrect) => {
+    if (isCorrect) {
+      alert("the answer is correct")
+    }
     const nextQuestion = currentQuestion + 1
     setCurrentQuestion(nextQuestion)
     if (nextQuestion < questions.length) {
@@ -79,7 +82,7 @@ function App() {
               </div>
             <div className='answer-section'>
               {questions[currentQuestion].answerOptions.map((answerOption, index) => (
-                <button onClick={() => handleAnswerButtonClick()} >{answerOption.answerText}</button>
+                <button onClick={() => handleAnswerButtonClick(answerOption.isCorrect)} >{answerOption.answerText}</button>
               ))}
             </div>
             </div>
