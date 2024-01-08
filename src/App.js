@@ -10,6 +10,11 @@ function App() {
   const handleAnswerButtonClick = (answerOption) => {
     const nextQuestion = currentQuestion + 1
     setCurrentQuestion(nextQuestion)
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion)
+    } else {
+      alert('you reached the final question')
+    }
   }
 
   const questions = [
