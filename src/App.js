@@ -66,9 +66,9 @@ function App() {
 
   ]
   return (
-    <div className="App">
+    <div className="app">
       {/* HINT: replace the "false" with logic to replace the score when user has answered all questions */}
-      {false ? (
+      {showScore ? (
         <div className='score-section'>You scored 1 out of {questions.length}</div>
       ) : (
             <>
