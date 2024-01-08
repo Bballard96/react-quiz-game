@@ -15,8 +15,7 @@ function App() {
     if (nextQuestion < questions.length) {
       setCurrentQuestion(nextQuestion)
     } else {
-      setCurrentQuestion(questions.length - 1)
-      alert('you reached the final question')
+      setShowScore(true)
     }
   }
 
