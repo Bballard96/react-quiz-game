@@ -6,6 +6,8 @@ import React, { Component } from 'react';
 function App() {
   
   const [currentQuestion, setCurrentQuestion] = useState(0)
+
+  const [showScore, setShowScore] = useState(false)
   
   const handleAnswerButtonClick = (answerOption) => {
     const nextQuestion = currentQuestion + 1
