@@ -4,6 +4,8 @@ import { useState } from 'react';
 import React, { Component } from 'react';
 
 function App() {
+
+  const [score, setScore] = useState(0)
   
   const [currentQuestion, setCurrentQuestion] = useState(0)
 
