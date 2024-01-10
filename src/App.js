@@ -13,7 +13,7 @@ function App() {
   
   const handleAnswerButtonClick = (isCorrect) => {
     if (isCorrect) {
-      alert("the answer is correct")
+      setScore(score + 1)
     }
     const nextQuestion = currentQuestion + 1
     setCurrentQuestion(nextQuestion)
@@ -73,7 +73,7 @@ function App() {
     <div className="app">
       {/* HINT: replace the "false" with logic to replace the score when user has answered all questions */}
       {showScore ? (
-        <div className='score-section'>You scored 1 out of {questions.length}</div>
+        <div className='score-section'>You scored {score} out of {questions.length}</div>
       ) : (
             <>
 
